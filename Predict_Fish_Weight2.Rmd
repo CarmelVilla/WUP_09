@@ -1,6 +1,6 @@
 ---
 title: "Weight of Fish"
-author: "Carmel Villa"
+author: "Carmel Villanueva"
 date: "31 August 2023"  
 output: 
   html_document:
