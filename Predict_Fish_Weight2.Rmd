@@ -1,7 +1,7 @@
 ---
 title: "Weight of Fish"
-author: "Your Name"
-date: "`r Sys.Date()`"  
+author: "Carmel Villa"
+date: "31 August 2023"  
 output: 
   html_document:
     number_sections: true
@@ -49,9 +49,18 @@ print(results)
 
 ```
 
+The best two variables to predict weight are height and width
+
 
 ### Best Two regressor model
+The best two regressor models are
 
+```{r}
+perchModel=lm(Weight~Height+Width,data=perch)
+summary(perchModel)
+```
+
+For the best Model for adjusted r square is 0.94
 
 ## Pike
 ```{r}
@@ -69,3 +78,10 @@ pike = filter(fishData, Species == "Pike")
 ### Best Two regressor model
 
 ## Final Summary Statements
+
+
+
+#Discussion & Conclusion
+
+Among these models we found the best to be 
+
